@@ -1,0 +1,33 @@
+/* custom-theme.css */
+
+/* Header */
+header {
+  background-color: #87ceeb; /* Sky Blue */
+  padding: 20px;
+  text-align: center;
+  color: #ffffff; /* White */
+}
+
+/* Main Content */
+.container {
+  margin: 20px;
+}
+
+.logo-section img {
+  width: 800px;
+  height: 200;
+}
+
+.welcome-section {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333333; /* Dark Gray */
+}
+
+/* Footer */
+footer {
+  background-color: #c3e6cb; /* Mint Green */
+  padding: 20px;
+  text-align: center;
+  color: #333333; /* Dark Gray */
+}
