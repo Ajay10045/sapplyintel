@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Team{% endblock %}
+
+{% block team_active %}active{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="welcome-section">
+            <h2>Our Team</h2>
+            <p>
+                Meet the talented individuals behind Sapplyintelligence who are dedicated to revolutionizing the agriculture supply chain industry.
+            </p>
+        </div>
+        <div class="profile-section">
+            <div class="profile-left">
+                <img src="{% static 'team/img/mangeram_nehra.png' %}" alt="Mangeram Nehra" class="profile-image">
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/manageram-nehra">
+                        <img src="{% static 'team/img/linkedin-logo.png' %}" alt="LinkedIn" class="linkedin-logo">
+                    </a>
+                    <p>Contact: +1 123-456-7890</p>
+                </div>
+            </div>
+            <div class="profile-right">
+                <h3>Mangeram Nehra</h3>
+                <p>Founder & Director - Sapply Intelligence</p>
+                <p>38 years of industry experience working at the ground level. Has a very good understanding of the problems faced by farmers, blockers for growth and prosperity. Hardworking and inspiring leader with excellent operations and supply chain management skills.</p>
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="profile-left">
+                <img src="{% static 'team/img/jaiveeri_devi.png' %}" alt="Jaiveeri Devi" class="profile-image">
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/jaiveeri-devi">
+                        <img src="{% static 'team/img/linkedin-logo.png' %}" alt="LinkedIn" class="linkedin-logo">
+                    </a>
+                    <p>Contact: +1 987-654-3210</p>
+                </div>
+            </div>
+            <div class="profile-right">
+                <h3>Jaiveeri Devi</h3>
+                <p>Co-Founder & Director - Human Resources</p>
+                <p>Provide a brief summary of Jaiveeri Devi's profile based on the information you have.</p>
+            </div>
+        </div>
+        <div class="profile-section">
+            <div class="profile-left">
+                <img src="{% static 'team/img/megha_ajay_2.png' %}" alt="Ajay Nehra" class="profile-image">
+                <div class="profile-links">
+                    <a href="https://www.linkedin.com/in/ajay-nehra">
+                        <img src="{% static 'team/img/linkedin-logo.png' %}" alt="LinkedIn" class="linkedin-logo">
+                    </a>
+                    <p>Contact: +1 555-123-4567</p>
+                </div>
+            </div>
+            <div class="profile-right">
+                <h3>Ajay Nehra</h3>
+                <p>Advisor</p>
+                <p>He is a graduate from IIT Kanpur and has a very strong technical background. He is responsible for leveraging machine learning algorithms to uncover patterns and trends in the agriculture industry. He advises the company on strengthening its digital presence.</p>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,34 +1,39 @@
+<!-- base.html -->
 {% load static %}
-
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}My Website{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/custom-theme.css' %}">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/custom-theme.css' %}">
+    <!-- Your CSS and other header elements -->
 </head>
 <body>
     <header>
-        <nav>
-            <table> <!-- Wrap the navigation in a table -->
-                <tr>
-                    <td><a href="{% url 'home' %}">Home</a></td>
-                    <td><a href="{% url 'about' %}">About Us</a></td> <!-- Added About Us tab -->
-                    <!-- Add more navigation links as needed -->
-                </tr>
-            </table>
-        </nav>
+        <div class="header-wrapper">
+            <div class="logo-container">
+                <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo-image">
+            </div>
+           
+            <nav>
+                <ul>
+                    <li class="{% block home_active %}{% endblock %}"><a href="/">Home</a></li>
+                    <li class="{% block team_active %}{% endblock %}"><a href="/team/">Team</a></li>
+                    <!-- Other navigation items -->
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
+    <div class="content">
         {% block content %}
-        <!-- Add your page-specific content here -->
         {% endblock %}
-    </main>
+    </div>
 
     <footer>
-        <!-- Add your footer content here -->
+        <p>&copy; 2023 Sapplyintelligence. All rights reserved.</p>
+        <p>The Corporate Identity Number of the company is U01611UP2023PTC181045</p>
     </footer>
+
+    <!-- Your JavaScript and other footer elements -->
 </body>
 </html>

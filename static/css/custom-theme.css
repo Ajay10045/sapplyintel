@@ -1,33 +1,48 @@
 /* custom-theme.css */
 
-/* Header */
-header {
-  background-color: #87ceeb; /* Sky Blue */
-  padding: 20px;
-  text-align: center;
-  color: #ffffff; /* White */
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #24292e;
+  padding: 10px;
 }
 
-/* Main Content */
-.container {
-  margin: 20px;
+.header-wrapper .logo-container {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
 
-.logo-section img {
-  width: 800px;
-  height: 200;
+.header-wrapper .logo-image {
+  max-height: 60px;
+  margin-right: 20px;
 }
 
-.welcome-section {
-  margin-top: 20px;
-  font-size: 18px;
-  color: #333333; /* Dark Gray */
+.header-wrapper h1 {
+  color: #ffffff;
+  margin: 0;
 }
 
-/* Footer */
-footer {
-  background-color: #c3e6cb; /* Mint Green */
-  padding: 20px;
-  text-align: center;
-  color: #333333; /* Dark Gray */
+.header-wrapper ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;  /* Add this line to align the nav items to the right */
+}
+
+.header-wrapper ul li {
+  margin-right: 10px;
+}
+
+.header-wrapper ul li a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.header-wrapper ul li a:hover {
+  background-color: #4d5358;
 }

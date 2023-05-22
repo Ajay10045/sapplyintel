@@ -25,7 +25,7 @@ from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
-    path('about/', views.about, name='about'),
+    path('team/', views.team, name='team'),
 ]
 
 if settings.DEBUG:

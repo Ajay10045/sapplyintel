@@ -1,17 +1,50 @@
+<!-- home.html -->
 {% extends 'base.html' %}
-
 {% load static %}
 
-{% block content %}
-<div class="container">
-    <div class="logo-section">
-        <img src="{% static 'img/logo.png' %}" alt="Logo">
-    </div>
+{% block title %}Home{% endblock %}
 
-    <div class="welcome-section">
-        <h1>Welcome to our Agriculture Website</h1>
-        <p>This company is aimed to bridge the gap between technology and agriculture. Our goal is to make sure every Indian eats pure organic food grown with love and care towards the plants like never before.</p>
-        <p>This is no ordinary CPG (Consumer Packaged Goods) company.</p>
+{% block home_active %}active{% endblock %}
+
+{% block content %}
+    <div class="container">
+
+        <div class="welcome-section">
+            <h2>About Us</h2>
+            <p>
+                Sapplyintelligence is a startup aimed at optimizing the agriculture supply chain of India. We work closely
+                with farmers, empowering them to maximize the value of their produce and connect
+                with wholesalers and retail outlets.
+            </p>
+            <p>
+                Our platform enables farmers to showcase their products and negotiate prices directly
+                with buyers, eliminating intermediaries and ensuring fair and transparent transactions.
+                By leveraging technology and data-driven insights, we help farmers optimize their
+                operations, improve productivity, and access a wider market.
+            </p>
+            <p>
+                Through our extensive network of wholesalers and retail outlets, we facilitate the
+                distribution of farm-fresh products to consumers. By eliminating unnecessary steps
+                in the supply chain, we reduce costs, minimize wastage, and ensure that end consumers
+                receive high-quality agricultural products at competitive prices.
+            </p>
+            <p>
+                At Sapplyintelligence, we are committed to promoting sustainable agriculture and
+                fostering strong relationships between farmers and buyers. We provide comprehensive
+                support to farmers, including training programs, market insights, and access to
+                financial resources. By empowering farmers and enabling them to connect with buyers
+                directly, we create a more efficient and equitable agricultural ecosystem.
+            </p>
+            <p>
+                Partner with us to transform your agriculture supply chain and drive sustainable
+                growth. Together, we can revolutionize the way agricultural products are sourced,
+                marketed, and distributed, creating a win-win situation for farmers, buyers, and
+                consumers alike.
+            </p>
+            <p>
+                We also have a brand called Mustard Garden, where we sell organic mustard oil and mustard cake as fertilizers and animal feed.
+                Mustard cake is a rich source of nutrients for dairy animals, making it an excellent choice for farmers.
+            </p>
+        </div>
     </div>
-</div>
 {% endblock %}
