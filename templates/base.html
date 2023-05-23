@@ -13,12 +13,13 @@
             <div class="logo-container">
                 <img src="{% static 'img/logo.png' %}" alt="Logo" class="logo-image">
             </div>
-           
             <nav>
                 <ul>
-                    <li class="{% block home_active %}{% endblock %}"><a href="/home">Home</a></li>
+                    <li class="{% block home_active %}{% endblock %}"><a href="/">Home</a></li>
                     <li class="{% block team_active %}{% endblock %}"><a href="/team/">Team</a></li>
-                    <!-- Other navigation items -->
+                    <li class="{% block garden_active %}{% endblock %}"><a href="/garden/">Garden</a></li>
+                    <li class="{% block contact_active %}{% endblock %}"><a href="/contact/">Contact Us</a></li>
+                    <li class="{% block login_active %}{% endblock %}"><a href="/login/">Login | Sign Up</a></li>
                 </ul>
             </nav>
         </div>

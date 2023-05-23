@@ -26,8 +26,17 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home, name='home'),
     path('team/', views.team, name='team'),
+    path('garden/', views.garden_view, name='garden'),
+    path('contact/', views.contact_view, name='contact'),
+    path('login/', views.login_view, name='login'),
+    path('signup/', views.signup_view, name='signup'),
+    path('', views.home_view, name='home'),
 ]
 
 if settings.DEBUG:
     urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
+from home.views import home
+from django.conf.urls.static import static
+from django.conf import settings
+from . import views
